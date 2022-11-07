@@ -5,7 +5,7 @@ public class Deserialization {
         String loc = "C:\\Users\\Dhinesh Kannan\\Downloads\\d.txt";
         ObjectInputStream in = new ObjectInputStream(new FileInputStream(loc));
         TestSerial der = (TestSerial) in.readObject();
-        System.out.println(der.age +":"+ der.name+":" + der.id+":" + der.salary);
+        System.out.println(der.age + ":" + der.name + ":" + der.id + ":" + der.salary);
         in.close();
     }
 }
